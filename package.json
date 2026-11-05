@@ -10,7 +10,13 @@
     "url": "git+https://github.com/jxhsjxhs/dsh-job-lasso.git"
   },
   "homepage": "https://github.com/jxhsjxhs/dsh-job-lasso#readme",
-  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "jobs", "remote-work"],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "jobs",
+    "remote-work"
+  ],
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -26,6 +32,7 @@
     "icon.svg",
     "assets/*",
     "README.md",
+    "README.zh.md",
     "LICENSE"
   ],
   "dsh": {
@@ -35,7 +42,9 @@
     "client": {
       "platform": "web",
       "immediately": true,
-      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
     }
   }
 }
