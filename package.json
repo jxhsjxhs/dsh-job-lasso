@@ -1,0 +1,41 @@
+{
+  "name": "dsh-job-lasso",
+  "version": "0.1.0",
+  "description": "Daily remote job hunting for BOSS Zhipin, Liepin and LinkedIn inside DeepSeek Harness.",
+  "type": "module",
+  "license": "MIT",
+  "author": "jxhsjxhs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxhsjxhs/dsh-job-lasso.git"
+  },
+  "homepage": "https://github.com/jxhsjxhs/dsh-job-lasso#readme",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "jobs", "remote-work"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

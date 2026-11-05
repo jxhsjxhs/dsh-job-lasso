@@ -1,0 +1,4 @@
+- insert:
+    - id: job-lasso
+      name: dsh-job-lasso
+      config: {}
